@@ -61,6 +61,25 @@ Error handling was a fun challenge working with this particular API, since any d
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## Contact
+
+<table align="center">
+  <img src="https://img.shields.io/badge/-Karrar%20Qasim-006a89" height="30" width="100">
+  <p><strong>Connect with:</strong></p>
+  <a href="https://www.linkedin.com/in/karrar-qasim-b6307024b/"> 
+    <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
+  </a>
+  <a href="https://github.com/KarrarQ">
+    <img src="https://img.shields.io/badge/-github-black?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Badge">
+  </a>
+  <a href="mailto: karawr1996@gmail.com">
+    <img src="https://img.shields.io/badge/-gmail-red?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail Badge">
+  </a>
+</div>
+</table>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <!-- MARKDOWN LINKS & IMAGES -->
 [TypeScript-shield]: https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white
 [React-shield]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
