@@ -3,6 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 import Articles from '../Articles/Articles';
 import ArticleDetails from '../ArticleDetails/ArticleDetails';
 import Search from '../Search/Search';
+import BadUrl from '../BadUrl/BadUrl';
 import './App.css';
 
 function App() {
@@ -62,6 +63,7 @@ function App() {
           }
          } 
         />
+        <Route component={BadUrl} />
       </Switch>
     </main>
   );
