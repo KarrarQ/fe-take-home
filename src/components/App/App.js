@@ -4,6 +4,7 @@ import Articles from '../Articles/Articles';
 import ArticleDetails from '../ArticleDetails/ArticleDetails';
 import Search from '../Search/Search';
 import BadUrl from '../BadUrl/BadUrl';
+import { getArticles } from '../../apiCalls';
 import './App.css';
 
 function App() {
@@ -14,13 +15,14 @@ function App() {
 
   useEffect(() => {
     setLoading('Loading...')
-    fetch('https://api.nytimes.com/svc/topstories/v2/home.json?api-key=ybisF2CGGDEAJBCUhCzPdJMIdJoBGGDo')
-      .then(response => {
-        if (!response.ok) {
-          throw new Error(`${response.status}`);
-        }
-        return response.json();
-      })
+    // fetch('https://api.nytimes.com/svc/topstories/v2/home.json?api-key=ybisF2CGGDEAJBCUhCzPdJMIdJoBGGDo')
+    //   .then(response => {
+    //     if (!response.ok) {
+    //       throw new Error(`${response.status}`);
+    //     }
+    //     return response.json();
+    //   })
+      getArticles()
       .then(data => {
         const newData = data.results.reduce((acc, result) => {
           const id = result.short_url.split('/')[3]
