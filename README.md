@@ -1,70 +1,30 @@
-# Getting Started with Create React App
+<a name="readme-top"></a>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!-- HEADER -->
+<h1 align="center">FE Take-Home Challenge: NY Times News Reader</h1>
 
-## Available Scripts
+<h3 align="center">A news reader app that pulls articles from the NY Time's <a href="https://developer.nytimes.com/docs/top-stories-product/1/overview">Top Stories API</a>.</h3>
 
-In the project directory, you can run:
+<h4 align="center"><a href=""><strong>Deploy Link</strong></a> | <a href="https://github.com/KarrarQ/fe-take-home"><strong>Explore The Docs »</strong></a></h4>
 
-### `npm start`
+## About The Project
+This project recreates a take-home challenge experience for front end developers with an MVP that includes: consuming a RESTful API and displaying its results—NY Times articles—as a list to the end user, allowing the user to access a detailed view of each article, and implement user search logic of some sort. It was completed in less than 6 hours.
+<br>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<h3 align="center">Wireframe:</h3>
+<p align="center"><img width="500" src="file:///Users/karrarq/Desktop/Screenshot%202023-04-13%20at%201.28.56%20PM.png" alt="A wireframe of the NY Times Reader"></p>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<h3 align="center">React Component Architecture:</h3>
+<p align="center"><img width="500" src="file:///Users/karrarq/Desktop/Screenshot%202023-04-13%20at%201.28.40%20PM.png" alt="A tree representing the NY Times Reader React component relationships"></p>
 
-### `npm test`
+<h3 align="center">Detailed Article Display:</h3>
+<p align="center"><img width="500" src="https://giphy.com/gifs/WW9dG2e7eMMc59lyjD?utm_source=media-link&utm_medium=landing&utm_campaign=Media%20Links&utm_term=" alt="A preview of a user clicking on more details for an article"></p>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<h3 align="center">User Search:</h3>
+<p align="center"><img width="500" src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExY2M0YWVlNzZiZDNmZjRkMWU3MTJhNTYwMTE0ZjRjOTY0YmQzNWU2ZSZjdD1n/wwBepOvRueIaADnC7i/giphy.gif" alt="A preview of a user searching through articles by keyword and author"></p>
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<h3 align="center">Responsive Design:</h3>
+<p align="center"><img width="500" src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExYzNkYzJlYmMxZGVhOTBjNTk0YzI1ZDNhZDM0ZjQxYjk5ZjYxMDljMCZjdD1n/yeT97cMW1nv7VRGo4y/giphy.gif" alt="A preview of the applicaiton's responsive design"></p>
+<p>
+This project was assigned during the fourth module of Turing's Front-End Engineering progam, about 20-21 weeks into its students learning how to code. The details of this project are outlined in <a href="https://mod4.turing.edu/projects/take_home/take_home_fe">this</a> project spec.
+</p>
