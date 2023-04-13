@@ -1,0 +1,19 @@
+.article-card {
+    align-items: center;
+    background-color: white;
+    border: .15rem solid black;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0.5rem;
+    padding: 1rem;
+    text-align: center;
+    width: 15rem;
+  }
+  
+.article-card img {
+    object-fit: cover;
+    height: 10rem;
+    width: 10rem;
+}
