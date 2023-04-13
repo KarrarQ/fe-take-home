@@ -5,7 +5,7 @@
 
 <h3 align="center">A news reader app that pulls articles from the NY Time's <a href="https://developer.nytimes.com/docs/top-stories-product/1/overview">Top Stories API</a>.</h3>
 
-<h4 align="center"><a href=""><strong>Deploy Link</strong></a> | <a href="https://github.com/KarrarQ/fe-take-home"><strong>Explore The Docs »</strong></a></h4>
+<h4 align="center"><a href="https://fe-take-home-seven.vercel.app/"><strong>Deploy Link</strong></a> | <a href="https://github.com/KarrarQ/fe-take-home"><strong>Explore The Docs »</strong></a></h4>
 
 ## About The Project
 This project recreates a take-home challenge experience for front end developers with an MVP that includes: consuming a RESTful API and displaying its results—NY Times articles—as a list to the end user, allowing the user to access a detailed view of each article, and implement user search logic of some sort. It was completed in less than 6 hours.
