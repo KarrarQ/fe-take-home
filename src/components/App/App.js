@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Switch, Route } from 'react-router-dom';
 import Articles from '../Articles/Articles';
 import Search from '../Search/Search';
 import './App.css';
@@ -20,14 +21,19 @@ function App() {
 
   return (
     <main>
-      <h1>NY Times News Reader</h1>
-      <Search
-        userSearch={userSearch}
-        setUserSearch={setUserSearch} 
-      />
-      <Articles
-        articles={articles}
-      />
+      <Switch>
+        <Route exact path="/">
+          <h1>NY Times News Reader</h1>
+          <Search
+            userSearch={userSearch}
+            setUserSearch={setUserSearch} 
+          />
+          <Articles
+            userSearch={userSearch}
+            articles={articles}
+          />
+        </Route>
+      </Switch>
     </main>
   );
 }
