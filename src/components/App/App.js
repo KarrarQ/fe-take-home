@@ -14,18 +14,11 @@ function App() {
   const [userSearch, setUserSearch] = useState('');
 
   useEffect(() => {
-    setLoading('Loading...')
-    // fetch('https://api.nytimes.com/svc/topstories/v2/home.json?api-key=ybisF2CGGDEAJBCUhCzPdJMIdJoBGGDo')
-    //   .then(response => {
-    //     if (!response.ok) {
-    //       throw new Error(`${response.status}`);
-    //     }
-    //     return response.json();
-    //   })
-      getArticles()
+    setLoading('Loading...');
+    getArticles()
       .then(data => {
         const newData = data.results.reduce((acc, result) => {
-          const id = result.short_url.split('/')[3]
+          const id = result.short_url.split('/')[3];
           result.id = id;
           acc.push(result);
           return acc;
@@ -34,7 +27,7 @@ function App() {
         setLoading('');
       })
       .catch(error => {
-        setError(`Uh oh, that's a ${error.message}! Something went wrong loading our articles... please refresh or try again later.`)
+        setError(`Uh oh, that's a ${error.message}! Something went wrong loading our articles... please refresh or try again later.`);
         setLoading('');
       })
   }, [])

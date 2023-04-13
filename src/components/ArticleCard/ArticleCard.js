@@ -1,9 +1,9 @@
 import './ArticleCard.css';
-
+const nytIcon = require('../../assets/nyticon.png');
 function ArticleCard({ article }) {
   const { title, byline, url, id } = article;
-  const imgUrl = article.multimedia[0].url;
-  const altText = article.multimedia[0].caption;
+  const imgUrl = article.multimedia ? article.multimedia[0].url : nytIcon;
+  const altText = article.multimedia ? article.multimedia[0].caption : 'There is no image available for this article.'
   const learnMoreLink = `/details/${id}`
 
   return (
