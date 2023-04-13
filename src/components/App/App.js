@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Articles from '../Articles/Articles';
-import ArticleDetails from './ArticleDetails/ArticleDetails.js'
+import ArticleDetails from '../ArticleDetails/ArticleDetails';
 import Search from '../Search/Search';
 import './App.css';
 

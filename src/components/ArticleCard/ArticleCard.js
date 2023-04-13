@@ -11,7 +11,7 @@ function ArticleCard({ article }) {
       <h3>{title}</h3>
       <img src={imgUrl} alt={altText} />
       <h4>{byline}</h4>
-      <p><a href={learnMoreLink}>Learn more</a> | <a href={url}>Read this article</a></p>
+      <p><a href={learnMoreLink}>Learn More</a> | <a href={url} target="_blank" rel="noopener noreferrer">Read This Article</a></p>
     </article>
   );
 }
