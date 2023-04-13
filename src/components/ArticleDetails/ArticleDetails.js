@@ -1,12 +1,13 @@
 import './ArticleDetails.css';
+
 const nytIcon = require('../../assets/nyticon.png');
 
 function ArticleDetails({ article, loading, error }) {
   const displayArticle = (articleInfo) => {
     const { title, abstract, byline, published_date, section, url } = articleInfo;
-    const displayAbstract = abstract ? abstract : 'No summary provided.'
+    const displayAbstract = abstract ? abstract : 'No summary provided.';
     const imgUrl = article.multimedia ? article.multimedia[0].url : nytIcon;
-    const altText = article.multimedia ? article.multimedia[0].caption : 'There is no image available for this article.'
+    const altText = article.multimedia ? article.multimedia[0].caption : 'There is no image available for this article.';
     const publishedDates = published_date.split('T')[0].split('-');
     const publishedDate = `${publishedDates[1]}/${publishedDates[2]}/${publishedDates[0]}`;
     const sectionCap = section.length > 2 ? section.charAt(0).toUpperCase() + section.slice(1) : section.toUpperCase();

@@ -1,4 +1,4 @@
-const apiKey = process.env.REACT_APP_NYTIMES_API_KEY;
+const apiKey = 'ybisF2CGGDEAJBCUhCzPdJMIdJoBGGDo';
 const baseUrl = 'https://api.nytimes.com/svc/topstories/v2/home.json?api-key=';
 
 const checkError = (res) => {
