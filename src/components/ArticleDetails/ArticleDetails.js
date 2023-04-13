@@ -1,6 +1,6 @@
 import './ArticleDetails.css';
 
-function ArticleDetails({ article }) {
+function ArticleDetails({ article, loading, error }) {
   const displayArticle = (articleInfo) => {
     const { title, abstract, byline, published_date, section, url } = articleInfo;
     const imgUrl = articleInfo.multimedia[0].url;
@@ -20,7 +20,20 @@ function ArticleDetails({ article }) {
     )
   }
 
-  const display = article ? displayArticle(article) : <h2>Loading...</h2>
+  const displayMessage = (string) => {
+    return (
+      <h2>{string}</h2>
+    )
+  }
+
+  let display = '';
+  if (article) {
+    display = displayArticle(article);
+  } else if (loading) {
+    display = displayMessage(loading);
+  } else if (error) {
+    display = displayMessage(error);
+  }
 
   return (
     <section className="details-section">

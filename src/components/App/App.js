@@ -7,9 +7,12 @@ import './App.css';
 
 function App() {
   const [articles, setArticles] = useState([]);
+  const [loading, setLoading] = useState('');
+  const [error, setError] = useState('');
   const [userSearch, setUserSearch] = useState('');
 
   useEffect(() => {
+    setLoading('Loading...')
     fetch('https://api.nytimes.com/svc/topstories/v2/home.json?api-key=ybisF2CGGDEAJBCUhCzPdJMIdJoBGGDo')
       .then(response => {
         if (!response.ok) {
@@ -25,6 +28,11 @@ function App() {
           return acc;
         }, [])
         setArticles(newData);
+        setLoading('');
+      })
+      .catch(error => {
+        setError(`Uh oh, that's a ${error.message}! Something went wrong loading our articles... please refresh or try again later.`)
+        setLoading('');
       })
   }, [])
 
@@ -41,11 +49,15 @@ function App() {
             userSearch={userSearch}
             articles={articles}
           />
+          <h2>{error && error}</h2>
+          <h2>{loading && loading}</h2>
         </Route>
         <Route exact path="/details/:id" render={({ match })=> {
           const articleToRender = articles.find(article => article.id === match.params.id)
           return <ArticleDetails
                     article={articleToRender}
+                    loading={loading}
+                    error={error}
                  />
           }
          } 
