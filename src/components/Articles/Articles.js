@@ -12,7 +12,7 @@ function Articles({ articles }) {
     )
   })
   return (
-    <section>
+    <section className="articles">
       I am Articles
       {articleDisplay}
     </section>

@@ -18,7 +18,7 @@ function App() {
 
   return (
     <main>
-      I am App
+      <h1>NY Times News Reader</h1>
       <Articles
         articles={articles}
       />
