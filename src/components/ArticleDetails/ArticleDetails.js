@@ -1,9 +1,9 @@
 import './ArticleDetails.css';
 
-function ArticleDetails() {
+function ArticleDetails({ article }) {
   return (
     <section>
-      I am ArticleDetails
+      I am ArticleDetails, here are some details: {article.title}
     </section>
   );
 }

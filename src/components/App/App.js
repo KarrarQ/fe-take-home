@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Articles from '../Articles/Articles';
+import ArticleDetails from './ArticleDetails/ArticleDetails.js'
 import Search from '../Search/Search';
 import './App.css';
 
@@ -16,7 +17,15 @@ function App() {
         }
         return response.json();
       })
-      .then(data => setArticles(data.results))
+      .then(data => {
+        const newData = data.results.reduce((acc, result) => {
+          const id = result.short_url.split('/')[3]
+          result.id = id;
+          acc.push(result);
+          return acc;
+        }, [])
+        setArticles(newData);
+      })
   }, [])
 
   return (
@@ -33,6 +42,14 @@ function App() {
             articles={articles}
           />
         </Route>
+        <Route exact path="/details/:id" render={({ match })=> {
+          const articleToRender = articles.find(article => article.id === match.params.id)
+          return <ArticleDetails
+                    article={articleToRender}
+                 />
+          }
+         } 
+        />
       </Switch>
     </main>
   );
